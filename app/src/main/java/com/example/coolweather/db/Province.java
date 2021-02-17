@@ -1,5 +1,7 @@
 package com.example.coolweather.db;
 
+import androidx.annotation.NonNull;
+
 import org.litepal.crud.DataSupport;
 
 public class Province extends DataSupport {
@@ -29,5 +31,11 @@ public class Province extends DataSupport {
 
     public void setProvinceCode(int provinceCode) {
         this.provinceCode = provinceCode;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return id+"|"+provinceName+"|"+provinceCode ;
     }
 }
