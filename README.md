@@ -1,2 +1,2 @@
 # coolweather
-this is a project
+this is a wealther forecast application.
